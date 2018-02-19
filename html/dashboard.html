@@ -1,0 +1,198 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>dashboard</title>
+		<link rel="stylesheet" type="text/css" href="../css/dashboard.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		
+	
+	
+	</head>
+	
+	<body>
+		<div class="container">
+		
+			<div class="grid">
+				<div class="title">
+					<img class="logo" src="../pictures/spacex-logo.png" alt="Logo SpaceX">
+				</div>
+				
+				<div class="header">.</div>
+				
+				<div class="one">
+					<p>Eten</p>
+					<canvas id="myChart"></canvas>					
+				</div>
+				
+				<script>
+					let myChart = document.getElementById('myChart').getContext('2d');
+
+
+					let massPopChart = new Chart(myChart, {
+					  type:'doughnut', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
+					  data:{
+						labels:['', ''],
+						datasets:[{
+						  label:'',
+						  data:[
+							70,
+							30,
+							
+							
+						  ],
+						  //backgroundColor:'green',
+						  backgroundColor:[
+							'blue',
+							'white',
+							
+						  ],
+						  borderWidth:1,
+						  borderColor:'white',
+						  hoverBorderWidth:3,
+						  hoverBorderColor:'#000'
+						}]
+					  },
+					  options:{
+						title:{
+						  display:true,
+						  text:'',
+						  fontSize:25
+						},
+						legend:{
+						  display:false,
+						  position:'right',
+						  labels:{
+							fontColor:'#000'
+						  }
+						
+						},
+						tooltips:{
+						  enabled:true
+						}
+					  }
+				});
+				</script>
+				
+				<div class="two">Zwaartekracht
+					<canvas id="myChartSecond"></canvas>
+				</div>
+				
+				<script>
+					let myChartSecond = document.getElementById('myChartSecond').getContext('2d');
+
+					let massPopChartSecond = new Chart(myChartSecond, {
+					  type:'bar', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
+					  data:{
+						labels:['', '', '', ''],
+						datasets:[{
+						  label:'',
+						  data:[
+							6,
+							10,
+							8,
+							2
+							
+						  ],
+						  //backgroundColor:'green',
+						  backgroundColor:[
+							'white',
+							'white',
+							'white',
+							'white'
+							
+						  ],
+						  borderWidth:1,
+						  borderColor:'#777',
+						  hoverBorderWidth:3,
+						  hoverBorderColor:'#000'
+						}]
+					  },
+					  options:{
+						title:{
+						  display:true,
+						  text:'',
+						  fontSize:25
+						},
+						legend:{
+						  display:false,
+						  position:'right',
+						  labels:{
+							fontColor:'#000'
+						  }
+						},
+						
+						tooltips:{
+						  enabled:true
+						}
+					  }
+					});
+				</script>
+				
+				<div class="three">Mars naar andere afstand omzetten
+					<img class="aarde" src="../pictures/aarde.svg" alt="Aarde naar Mars">
+				</div>
+				
+				<div class="four">Atmosfeer
+					<canvas id="myChartFour"></canvas>
+				</div>
+				
+				<script>
+					let myChartFour= document.getElementById('myChartFour').getContext('2d');
+
+					let massPopChartFour = new Chart(myChartFour, {
+					  type:'pie', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
+					  data:{
+						labels:['Koolstofdioxide', 'Stikstof', 'Zuurstof'],
+						datasets:[{
+						  label:'',
+						  data:[
+							10,
+							4,
+							2
+							
+							
+						  ],
+						  //backgroundColor:'green',
+						  backgroundColor:[
+							'blue',
+							'green',
+							'red'
+							
+							
+						  ],
+						  borderWidth:1,
+						  borderColor:'#777',
+						  hoverBorderWidth:3,
+						  hoverBorderColor:'#000'
+						}]
+					  },
+					  options:{
+						title:{
+						  display:true,
+						  text:'',
+						  fontSize:25
+						},
+						legend:{
+						  display:false,
+						  position:'right',
+						  labels:{
+							fontColor:'#000'
+						  }
+						},
+						
+						tooltips:{
+						  enabled:true
+						}
+					  }
+					});
+				</script>
+				
+			</div>	
+			
+		</div>	
+	</body>
+</html>
