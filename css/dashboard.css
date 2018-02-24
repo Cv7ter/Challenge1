@@ -22,12 +22,9 @@
 	
 }
 
-.title > h1	{
-	color: #005288;
-	font-size: 50px;
-	font-family: Abduction;
-	border-bottom: 10px solid #005288;
-	padding-bottom: 1%;
+.logo 	{
+	width: 60%;
+	margin: 3%;
 }
 
 .one 	{
@@ -59,11 +56,16 @@
 	margin: 0 5% 5% 0;
 }
 	
+#myProgress {
+    width: 100%;
+    background-color: grey;
+}
+#myBar {
+    width: 1%;
+    height: 30px;
+    background-color: green;
 }
 
-.aarde	{
-	margin: 5% 2% 5% 2%;
-}
 
 
 
