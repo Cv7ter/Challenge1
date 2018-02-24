@@ -18,7 +18,7 @@
 		
 			<div class="grid">
 				<div class="title">
-					<img src="../pictures/spacex-logo.png" alt="logo" class="logo">
+					<h1>space X</h1>
 				</div>
 				
 				<div class="header"></div>
@@ -133,33 +133,8 @@
 				</script>
 				
 				<div class="three">Aarde naar Mars
-					<progress id="progressBar" value="0" max="100" style="width:300px;"></progress>
-					<span id="status"></span>
-					<h1 id="finalMessage"></h1>
-				
-					
-						<script>
-						function progressBarSim(al) {
-						  var bar = document.getElementById('progressBar');
-						  var status = document.getElementById('status');
-						  status.innerHTML = al+"%";
-						  bar.value = al;
-						  al++;
-							var sim = setTimeout("progressBarSim("+al+")",300);
-							if(al == 100){
-							  status.innerHTML = "100%";
-							  bar.value = 100;
-							  clearTimeout(sim);
-							  var finalMessage = document.getElementById('finalMessage');
-							  finalMessage.innerHTML = "Process is complete";
-							}
-						}
-						var amountLoaded = 0;
-						progressBarSim(amountLoaded);
-						</script>
+					<img class="aarde" src="../pictures/aarde.svg" alt="Aarde naar Mars">
 				</div>
-				
-				
 				
 				<div class="four">Atmosfeer
 					<canvas id="myChartFour"></canvas>
